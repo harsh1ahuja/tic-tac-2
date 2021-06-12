@@ -142,6 +142,7 @@ function play(){
     document.getElementById('p1').innerHTML="player X score:"+ scoreX;
            
     document.getElementById('p2').innerHTML="player O score:"+ scoreY;
+
            
       
 
@@ -423,6 +424,36 @@ document.getElementById('p1').innerHTML="player X score:"+ scoreX;
 document.getElementById('p2').innerHTML="player O score:"+ scoreY;
 }
 else {}
+if(scoreX ===5){
+    document.getElementById('msg')
+    .innerHTML = "Player X won the game";  
+    document.getElementById("b1").disabled=true;
+    document.getElementById("b2").disabled=true;
+    document.getElementById("b3").disabled=true;
+    document.getElementById("b4").disabled=true;
+    document.getElementById("b5").disabled=true;
+    document.getElementById("b6").disabled=true;
+    document.getElementById("b7").disabled=true;
+    document.getElementById("b8").disabled=true;
+    document.getElementById("b9").disabled=true;
+    document.getElementById("reset").disabled=true;
+}
+if(scoreY ===5){
+    document.getElementById('msg')
+    .innerHTML = "Player O won the game";  
+    document.getElementById("b1").disabled=true;
+    document.getElementById("b2").disabled=true;
+    document.getElementById("b3").disabled=true;
+    document.getElementById("b4").disabled=true;
+    document.getElementById("b5").disabled=true;
+    document.getElementById("b6").disabled=true;
+    document.getElementById("b7").disabled=true;
+    document.getElementById("b8").disabled=true;
+    document.getElementById("b9").disabled=true;
+    document.getElementById("reset").disabled=true;
+}
+
+
 }
 
 function reset_fun(){
